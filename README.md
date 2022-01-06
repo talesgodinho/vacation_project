@@ -2,13 +2,14 @@
 Repositório criado para os projetos de férias do TechDive do Instituto Senai de Tecnologia.
 
 # Projeto 1 - Sistema de gerenciamento de funcionários
-	Desenvolva um algoritmo em JAVA para implementar um “Sistema de Gerenciamento de Funcionários”. O algoritmo deverá abordar: 
+
+Desenvolva um algoritmo em JAVA para implementar um “Sistema de Gerenciamento de Funcionários”. O algoritmo deverá abordar: 
 Classes e Objetos;
 Heranças;
 Poliformismo;
 Interfaces;
 
-	A empresa possui os seguintes cargos:
+A empresa possui os seguintes cargos:
 Gerente Geral
 Gerente de departamento
 Líder técnico
@@ -30,20 +31,20 @@ Para isso, desenvolva um algoritmo que faça a gestão das turmas e dos professo
 Turma A na semana do dia 03/01/2022 até 07/01/2022 terá C#
 Turma B na semana do dia 03/01/2022 até 07/01/2022 terá C#
 
-	A turma possui os seguintes atributos:
+A turma possui os seguintes atributos:
 Identificação
 Nome da turma
 Quantidade de alunos
 Assuntos (poderá ser um array ou uma classe)
 Data de início das aulas
 
-	Os docentes possuem os seguintes atributos:
+Os docentes possuem os seguintes atributos:
 Identificação
 Nome do docente
 Turma atendida atualmente
-	O sistema também deverá armazenar um histórico das turmas, informando qual docente ministrou as aulas e quais semanas. Caso julgue necessário, utilize alguma biblioteca de manipulação de datas. Lembrando que você poderá construir suas classes da maneira que achar melhor para resolver o algoritmo.
+O sistema também deverá armazenar um histórico das turmas, informando qual docente ministrou as aulas e quais semanas. Caso julgue necessário, utilize alguma biblioteca de manipulação de datas. Lembrando que você poderá construir suas classes da maneira que achar melhor para resolver o algoritmo.
 	
-  O algoritmo deverá apresentar o seguinte menu:
+O algoritmo deverá apresentar o seguinte menu:
 Cadastrar turma 
 Cadastrar docentes
 Definir docentes para uma determinada turma
