@@ -1,7 +1,5 @@
 package projeto2;
 
-import projeto1.Colaborador;
-
 import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
 import java.util.ArrayList;
@@ -58,8 +56,23 @@ public class Main {
     }
 
     public static void newTurma(){
-        System.out.print("Informe o ID da turma: ");
-        String id = input.nextLine();
+
+        boolean valida = true;
+        String id = null;
+
+        do {
+            valida = true;
+            System.out.print("Informe o ID da turma: ");
+            id = input.nextLine();
+
+            for (Turma turma : turmas) {
+                if (turma.getIdTurma().equals(id)) {
+                    valida = false;
+                    System.out.println("ID já existente! Insira um difernete.");
+                    break;
+                }
+            }
+        }while (!valida);
 
         System.out.print("Informe o nome da turma: ");
         String nome = input.nextLine();
@@ -96,8 +109,24 @@ public class Main {
     }
 
     public static void newDocente(){
-        System.out.print("Informe o ID do docente: ");
-        String id = input.nextLine();
+
+        boolean valida = true;
+        String id = null;
+
+        do {
+            valida = true;
+            System.out.print("Informe o ID do docente: ");
+            id = input.nextLine();
+
+            for (Docente docente : docentes) {
+                if (docente.getIdDocente().equals(id)) {
+                    valida = false;
+                    System.out.println("ID já existente! Insira um difernete.");
+                    break;
+                }
+            }
+        }while (!valida);
+
 
         System.out.print("Informe o nome do docente: ");
         String nome = input.nextLine();
@@ -140,6 +169,7 @@ public class Main {
     }
 
     public static void listarTurmas(){
+        System.out.println("Lista de turmas já definidas com docente, assunto e semana:");
         for (Aulas aulas :  Aulas.aulas){
             System.out.println("- Turma " + aulas.getNomeTurma() + " na semana do dia " + aulas.getDataInicio() + " terá aula de "
                     + aulas.getAssunto() + " com o docente " + aulas.getNomeDocente() + ".");
