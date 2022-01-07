@@ -9,17 +9,19 @@ public class Main {
     static Scanner input = new Scanner(System.in);
 
     public static void mostrarMenu(){
-        System.out.println("\n--- BEM-VINDO AO GerFun | Gerência de funcionários ---");
-        System.out.println("O que você deseja fazer hoje?");
-        System.out.println("""
-                1 - Adicionar Funcionário
-                2 - Ver detalhes de um funcionário
-                3 - Demitir funcionário
-                4 - Atualizar informações de um funcionário
-                5 - Listar todos os funcionários
-                6 - Listar somente os funcionários trabalhando
-                7 - Listar somente os funcionários demitidos
-                8 - SAIR""");
+        System.out.println("*————————————————————————————————————————————*");
+        System.out.println("|  BEM-VINDO AO GERENCIADOR DE FUNCIONÁRIOS  |");
+        System.out.println("*————————————————————————————————————————————*");
+        System.out.println("|              Escolha uma opção:            |");
+        System.out.println("| 1 - Adicionar Funcionário                  |");
+        System.out.println("| 2 - Ver detalhes de um funcionário         |");
+        System.out.println("| 3 - Demitir funcionário                    |");
+        System.out.println("| 4 - Atualizar informações de funcionário   |");
+        System.out.println("| 5 - Listar todos os funcionários           |");
+        System.out.println("| 6 - Listar funcionário ativos              |");
+        System.out.println("| 7 - Listar funcionário desligados          |");
+        System.out.println("| 8 - SAIR                                   |");
+        System.out.println("——————————————————————————————————————————————");
         executaMenu();
     }
 
@@ -54,13 +56,18 @@ public class Main {
         System.out.print("Informe o número da matrícula: ");
         String matricula = input.nextLine();
 
-        System.out.println("Em qual cargo você deseja adicionar?");
-        System.out.println("""
-                1 - Gerente Geral
-                2 - Gerente de departamento
-                3 - Líder Técnico
-                4 - Colaborador
-                5 - Voltar""");
+        System.out.println("\nEm qual cargo você deseja adicionar?\n");
+
+        System.out.println("*————————————————————————————————————————————*");
+        System.out.println("|             CARGOS DISPONÍVEIS             |");
+        System.out.println("*————————————————————————————————————————————*");
+        System.out.println("|              Escolha uma opção:            |");
+        System.out.println("| 1 - Gerente Geral                          |");
+        System.out.println("| 2 - Gerente de departamento                |");
+        System.out.println("| 3 - Líder Técnico                          |");
+        System.out.println("| 4 - Colaborador                            |");
+        System.out.println("| 5 - VOLTAR                                 |");
+        System.out.println("——————————————————————————————————————————————");
 
         int op;
 
